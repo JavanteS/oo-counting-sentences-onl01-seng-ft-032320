@@ -15,6 +15,7 @@ class String
   end
 
   def count_sentences
-   sentence=self.split(/[.?!]/) 
+   sentence=self.squeeze('.!?').count('.!?') 
+   sentence
   end
 end
